@@ -1,7 +1,9 @@
 # Need to be modified according to different users
-OPENCL_VERSION=-DOPENCL_3_0
+OPENCL_VERSION=-DCL_TARGET_OPENCL_VERSION=300
 GPU_PLATFORM=-DNVIDIA_PLATFORM
+
 BOOST_LIB_PATH=/usr/local/include/boost_1_77_0/
+#BOOST_LIB_PATH=$BOOST_ROOT
 # Should not be modified
 BOOST_INC_PATH=-I$(BOOST_LIB_PATH) -I$(BOOST_LIB_PATH)/boost 
 VINA_GPU_INC_PATH=-I./lib -I./OpenCL/inc 
